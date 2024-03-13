@@ -1,0 +1,85 @@
+body {
+            width:100%;
+            height:95vh;
+            margin:0;
+            padding:0;
+            font-family: Arial;
+        }
+        
+        sidebar {
+            margin:0;
+            width:35%;
+            height:100%;
+            background-image: linear-gradient(140deg, #2688ff, #0055bd);
+            float:left;
+            color:#ffffff;
+            
+        }
+        main {
+            float:left;
+            margin:0;
+            width:65%;
+            height:100%;
+            background-color: #fafafa;
+            
+        }
+        footer {
+            margin:0;
+            clear:both;
+            width:100%;
+            height:5%;
+            background-color: #fafafa;
+            text-align:center;
+        }
+        
+        #prof-picture {
+            margin-top:10%;
+            width: 40%;
+            height: 25%;
+            margin-left: 30%;
+            border: 5px solid #003c63;
+        }
+        #About_me {
+            margin-top:25%;
+            margin-left:10%;
+            width:80%;
+            text-align: justify;
+            
+        }
+        
+        h1 {
+            color:#0070ba;
+            font-family: Arial;
+            font-size:48px;
+        }
+        h3 {
+            font-family: Arial;
+            font-size: 32px;
+            color:#0070ba;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .years {
+            color: gray;
+            padding: 10px;
+        }
+        .segment {
+            margin-left:5%;
+        }
+
+        .p-segment {
+            font-weight: bold;
+            font-size:20px;
+        }
+        a {
+            text-decoration: none; 
+            color:#000000
+        }
+        a:hover {
+            color:blue;
+        }
