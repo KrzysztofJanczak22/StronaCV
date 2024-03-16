@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
     <title>Krzysztof Janczak</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styl.css">
 </head>
-<body>
-    <aside>
-        <div id="prof-picture"><img alt="Zdjęcie" src="KrzysztofJanczak.jpg" width="100%" height="100%"></div>
-        
-        <div id="About_me">
-            <h4>Kontakt</h4>
-            <i class="material-symbols-outlined">call </i>508909925<br>
-            <i style="#"class="material-symbols-outlined">email </i><a href="mailto:krzysztofjanczak02@gmail.com">krzysztofjanczak02@gmail.com</a><br>
-            <hr>
-            <h4>Języki</h4>
-            <p>Język polski- ojczysty</p>
-            <p>Język angielski - średni B1</p>
-            <hr>
-            <h4>O mnie</h4>
-            Interesuję się programowaniem (szczególnie w pythonie), ale jestem również otwarty na inne
+<body class="container-fluid">
+    <div class="row firstrow"> <!-- Dodano klasę "row" -->
+        <div class="col-12 col-md-4">
+            <aside>
+                <img alt="Krzysztof Janczak" class ='img-fluid' src="KrzysztofJanczak.jpg">
+                <div class="aside-part">
+                    <h2>Kontakt</h2>
+                    <table>
+                        <tr><td><i class="fa fa-mobile"></i></td><td>508909925</td></i></tr>
+                        <tr><td><i class="fa fa-at" style="font-size:20px;"></i></td><td><a href="mailto:krzysztofjanczak02@gmail.com">krzysztofjanczak02@gmail.com</a></td></i></tr>         
+                    </table>
+                    <hr>
+                    <h2>Języki</h2>
+                        Język polski - ojczysty<br>
+                        Język angielski - średni B1
+                    <hr>
+                    <span style="font-size:16px;">
+                        W swojej zawodowej karierze stawiam przede wszystkim na swój rozwój.Interesuję się programowaniem (szczególnie w pythonie), ale jestem również otwarty na inne
             technologie. Mam za sobą doświadczenie przy paru projektach automatyzacji procesów w PowerAutomate, PowerApps
             i takimi sprawami najbardziej lubię się zajmować. Oprócz tego moim hobby jest piłka nożna i koszykówka.
-        </div>
-        
-    </aside>
-    <main>
-
-            <h1 style="margin-left:5%;">Krzysztof Janczak</h1>
-
-            <div class="segment">
-                <h3><i style="font-size:32px;" class="material-symbols-outlined">School</i> Wykształcenie</h3>
-                <p class="p-segment">Społecznie Akademia Nauk w Łodzi</b></p>
-                <i class="years">10.2023-aktualnie kierunek: Studia inżynierskie informatyka</i>
-                <p class="p-segment">Powiatowy Zespół Szkół nr 1 w Sieradzu</p>
-                <i class="years">09.2018-05.2022 kierunek: Technik informatyk</i>
-            </div>
-            <div class="segment">
-                <h3><span class="material-symbols-outlined" style="font-size:32px;">
-                    business_center</span> Doświadczenie</h3>
-                    <p class="p-segment">Borg Automotive Sp. z.o.o</p>
-                    <i class="years">
-                        10.2022-aktualnie stanowisko: Młodszy inżynier ds. Wsparcia IT
-                    </i>
-                    <p class="p-segment">Inwar Sieradz</p>
-                    <i class="years">05.2021-06.2021 stanowisko: Praktyki</i>
-
+                    </span>
                 </div>
-            
-            
-        
-        
-    </main>
-    <footer>
-        Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.
-    </footer>
+
+            </aside>
+        </div>
+        <div class="col-12 col-md-8">
+            <main>
+                <h1 style="font-weight: bold; color:#007de3">Krzysztof Janczak</h1>
+
+                <div class="main-segment">
+                    <h3 style="font-weight: bold;"><i class="fa fa-book"></i> Wykształcenie</h3>
+                    <h4>Społeczna Akademia Nauk w Łodzi</h4>
+                    <p>2023-aktualnie kierunek:informatyka</p>
+                    <h4>Powiatowy Zespół Szkół nr1 w Sieradzu</h4>
+                    <p>2023-aktualnie kierunek: technik-informatyk</p>
+                </div>
+                <div class="main-segment">
+                    <h3 style="font-weight: bold;"><i class="fa fa-vcard"></i> Doświadczenie</h3>
+                    <h4>Borg Automotive Sp.z.o.o</h4>
+                    <p>10.2022-aktualnie stanowisko: Młodszy inżynier ds.Wsparcia IT</p>
+                    <h4>Inwar Sieradz</h4>
+                    <p>05.2021-06.2021 stanowisko: staż</p>
+                </div>
+                <div class="main-segment">
+                    <h3 style="font-weight: bold;"><i class="fa fa-check"></i> Umiejętności</h3>
+                    <ul>
+                        <li>Podstawy Python</li>
+                        <li>PowerApps, PowerAutomate</li>
+                        <li>Podstawy SQL i relacyjnych baz danych</li>
+                        <li>Sieci DHCP,DNS,VLAN</li>
+                        <li>Znajomość systemów Windows i Linux</li>
+                    </ul>
+                </div>
+
+            </main>
+        </div>
+        </div>
+    <div class="row secondrow"> <!-- Dodano klasę "row" -->
+        <div class="col-12 footer">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.</div>
+    </div>
 </body>
 </html>
-
